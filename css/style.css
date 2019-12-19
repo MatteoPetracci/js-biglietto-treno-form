@@ -8,6 +8,10 @@
   text-transform: uppercase;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .row {
   display: flex;
   justify-content: center;
