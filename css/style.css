@@ -65,3 +65,9 @@ input {
   border: 1px solid #ca6048;
   padding: 3px 5px;
 }
+
+select {
+  border-radius: 5px;
+  border: 1px solid #ca6048;
+  padding: 3px 5px;
+}
