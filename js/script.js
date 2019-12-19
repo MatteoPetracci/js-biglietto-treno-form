@@ -29,8 +29,8 @@ function() {
 
   var costoBiglietto = kmPasseggero * 0.21;
 
-  if (etaPasseggero == "minorenne") {
-    document.
+  if (fasciaEta == "minorenne") {
+    document.getElementById('offerta').innerHTML = "Offerta Young";
 
 }
 }
