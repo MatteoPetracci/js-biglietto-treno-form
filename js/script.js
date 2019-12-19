@@ -43,15 +43,19 @@ function() {
     document.getElementById('offerta').innerHTML = "Offerta Young";
     document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoMinorenne;
     document.getElementById('codice_cp').innerHTML = codiceCp;
+    document.getElementById("carrozza").innerHTML = carrozza;
   } else if (fasciaEta == "over65") {
   document.getElementById('offerta').innerHTML = "Offerta Silver";
   document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoOver65;
   document.getElementById('codice_cp').innerHTML = codiceCp;
+  document.getElementById("carrozza").innerHTML = carrozza;
+
 
 } else {
   document.getElementById('offerta').innerHTML = "Biglietto Standard";
   document.getElementById('costo_ticket').innerHTML = costoBiglietto;
   document.getElementById('codice_cp').innerHTML = codiceCp;
+  document.getElementById("carrozza").innerHTML = carrozza;
 }
 
 }
