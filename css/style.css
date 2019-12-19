@@ -113,3 +113,10 @@ th {
 td {
   padding: 50px 20px;
 }
+
+/* focus */
+
+.btn:focus {
+  color: white;
+  background-color: #ca6048;
+}

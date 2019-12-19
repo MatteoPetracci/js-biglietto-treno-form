@@ -35,29 +35,22 @@ function() {
 
   var carrozza = Math.floor(Math.random() *9) + 1;
   var codiceCp = Math.floor(Math.random() * (99999 -90000 + 1)) + 90000;
-
+  var sconto = "Tariffa standard";
 
   document.getElementById('nome-passeggero').innerHTML = nomeUtente;
 
   if (fasciaEta == "minorenne") {
-    document.getElementById('offerta').innerHTML = "Offerta Young";
-    document.getElementById('costo_ticket').innerHTML = (costoBiglietto - scontoMinorenne).toFixed(2);
-    document.getElementById('codice_cp').innerHTML = codiceCp;
-    document.getElementById("carrozza").innerHTML = carrozza;
+    costoBiglietto = costoBiglietto -scontoMinorenne;
+    sconto = "Sconto Young";
   } else if (fasciaEta == "over65") {
-  document.getElementById('offerta').innerHTML = "Offerta Silver";
-  document.getElementById('costo_ticket').innerHTML = (costoBiglietto - scontoOver65).toFixed(2);
-  document.getElementById('codice_cp').innerHTML = codiceCp;
-  document.getElementById("carrozza").innerHTML = carrozza;
+    costoBiglietto = costoBiglietto - scontoOver65;
+    sconto = "Sconto Silver";
+  }
 
 
-} else {
-  document.getElementById('offerta').innerHTML = "Biglietto Standard";
-  document.getElementById('costo_ticket').innerHTML = costoBiglietto.toFixed(2);
-  document.getElementById('codice_cp').innerHTML = codiceCp;
-  document.getElementById("carrozza").innerHTML = carrozza;
+document.getElementById('offerta').innerHTML = sconto;
+document.getElementById('costo_ticket').innerHTML = costoBiglietto.toFixed(2);
+document.getElementById('codice_cp').innerHTML = codiceCp;
+document.getElementById("carrozza").innerHTML = carrozza;
 }
-
-}
-
 )
