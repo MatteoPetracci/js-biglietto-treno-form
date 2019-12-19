@@ -71,3 +71,16 @@ select {
   border: 1px solid #ca6048;
   padding: 3px 5px;
 }
+
+/* bottoni */
+.container_button {
+  text-align: center;
+}
+
+.btn {
+  color: red;
+  font-weight: bold;
+  background-color: lightgrey;
+  padding: 4px;
+  border-radius: 5px;
+}
