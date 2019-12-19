@@ -54,3 +54,15 @@ document.getElementById('codice_cp').innerHTML = codiceCp;
 document.getElementById("carrozza").innerHTML = carrozza;
 }
 );
+
+var annullaButton = document.getElementById('annulla');
+
+annullaButton.addEventListener("click",
+function() {
+  document.getElementById('offerta').innerHTML = "";
+  document.getElementById('costo_ticket').innerHTML = "";
+  document.getElementById('codice_cp').innerHTML = "";
+  document.getElementById("carrozza").innerHTML = "";
+  document.getElementById('nome-passeggero').innerHTML = "";
+}
+);
