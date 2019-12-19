@@ -29,8 +29,14 @@ function() {
 
   var costoBiglietto = kmPasseggero * 0.21;
 
+  var scontoMinorenne = (costoBiglietto * 20) / 100 ;
+
+  var scontoOver65 = (costoBiglietto * 40) / 100;
+
   if (fasciaEta == "minorenne") {
     document.getElementById('offerta').innerHTML = "Offerta Young";
+    document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoMinorenne;
+
 
 }
 }
@@ -60,9 +66,6 @@ function() {
 //
 // // dichiarare variabile sconto minorenne
 //
-// var scontoMinorenne = (costoBiglietto * 20) / 100 ;
-//
-// var scontoOver65 = (costoBiglietto * 40) / 100;
 //
 // // inserire la condizioni con sconto passeggero
 //
