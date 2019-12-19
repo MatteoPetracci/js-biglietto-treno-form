@@ -41,6 +41,7 @@ h2 {
 
 .wrapper {
   background-color: #ca6048;
+  padding: 50px 0;
 }
 
 .form {
@@ -96,6 +97,12 @@ select {
 .nome_passeggero {
   width: 30%;
   background-color: lightgrey;
+  border-radius: 15px;
+}
+
+#nome-passeggero {
+  margin-top: 10px;
+  text-transform: capitalize;
 }
 
 /* tabella */
@@ -104,5 +111,5 @@ th {
 }
 
 td {
-  padding: 0 20px;
+  padding: 50px 20px;
 }
