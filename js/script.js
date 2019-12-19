@@ -52,6 +52,9 @@ document.getElementById('offerta').innerHTML = sconto;
 document.getElementById('costo_ticket').innerHTML = costoBiglietto.toFixed(2) + " €";
 document.getElementById('codice_cp').innerHTML = codiceCp;
 document.getElementById("carrozza").innerHTML = carrozza;
+var containerBiglietto = document.getElementById('ticket_container');
+containerBiglietto.classList.remove("hidden");
+containerBiglietto.classList.add("show");
 }
 );
 
@@ -66,6 +69,11 @@ function() {
   document.getElementById('nomePasseggero').value = "";
   document.getElementById('kmNecessari').value = "";
   document.getElementById('fasciaEta').value = "";
+  document.getElementById('nome-passeggero').innerHTML = "";
+
+  var containerBiglietto = document.getElementById('ticket_container');
+  containerBiglietto.classList.remove("show");
+  containerBiglietto.classList.add("hidden");
 
 }
 );
