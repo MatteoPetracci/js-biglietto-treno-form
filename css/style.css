@@ -130,3 +130,12 @@ td {
   opacity: 1;
   transition: 1s;
 }
+
+/* hover */
+input:focus {
+  background-color: #ca6048;
+}
+
+input:focus::placeholder {
+  color: white;
+}
