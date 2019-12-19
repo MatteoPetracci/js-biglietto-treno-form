@@ -36,10 +36,16 @@ function() {
   if (fasciaEta == "minorenne") {
     document.getElementById('offerta').innerHTML = "Offerta Young";
     document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoMinorenne;
-
+  } else if (fasciaEta == "over65") {
+  document.getElementById('offerta').innerHTML = "Offerta Silver";
+  document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoOver65;
+} else {
+  document.getElementById('offerta').innerHTML = "Biglietto Standard";
+  document.getElementById('costo_ticket').innerHTML = costoBiglietto;
+}
 
 }
-}
+
 )
 
 
