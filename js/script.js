@@ -63,6 +63,9 @@ function() {
   document.getElementById('costo_ticket').innerHTML = "";
   document.getElementById('codice_cp').innerHTML = "";
   document.getElementById("carrozza").innerHTML = "";
-  document.getElementById('nome-passeggero').innerHTML = "";
+  document.getElementById('nomePasseggero').value = "";
+  document.getElementById('kmNecessari').value = "";
+  document.getElementById('fasciaEta').value = "";
+
 }
 );
