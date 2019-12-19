@@ -49,8 +49,8 @@ function() {
 
 
 document.getElementById('offerta').innerHTML = sconto;
-document.getElementById('costo_ticket').innerHTML = costoBiglietto.toFixed(2);
+document.getElementById('costo_ticket').innerHTML = costoBiglietto.toFixed(2) + " €";
 document.getElementById('codice_cp').innerHTML = codiceCp;
 document.getElementById("carrozza").innerHTML = carrozza;
 }
-)
+);
