@@ -29,7 +29,8 @@ body {
   padding: 20px;
 }
 
-h1 {
+h1,
+h3 {
   color: white;
   padding: 25px 0;
 }
@@ -83,4 +84,16 @@ select {
   padding: 4px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+/* seconda sezione */
+
+.container_row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nome_passeggero {
+  width: 30%;
+  background-color: lightgrey;
 }
