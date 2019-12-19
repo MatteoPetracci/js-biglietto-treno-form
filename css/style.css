@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* classi generali */
 .text_uppercase {
   text-transform: uppercase;
 }
@@ -20,4 +20,12 @@
 .col {
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  color: white;
+}
+
+.wrapper {
+  background-color: #ca6048;
 }
