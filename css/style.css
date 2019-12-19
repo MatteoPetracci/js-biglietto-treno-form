@@ -114,12 +114,7 @@ td {
   padding: 50px 20px;
 }
 
-/* focus */
 
-.btn:focus {
-  color: white;
-  background-color: #ca6048;
-}
 
 .hidden {
   opacity: 0;
@@ -131,9 +126,10 @@ td {
   transition: 1s;
 }
 
-/* hover */
+/* focus */
 input:focus {
   background-color: #ca6048;
+  color: white;
 }
 
 input:focus::placeholder {
@@ -143,5 +139,10 @@ input:focus::placeholder {
 select:focus {
   background-color: #ca6048;
   color: white;
-  
+
+}
+
+.btn:focus {
+  color: white;
+  background-color: #ca6048;
 }
