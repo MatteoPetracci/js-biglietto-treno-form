@@ -33,6 +33,8 @@ function() {
 
   var scontoOver65 = (costoBiglietto * 40) / 100;
 
+  document.getElementById('nome-passeggero').innerHTML = nomeUtente;
+
   if (fasciaEta == "minorenne") {
     document.getElementById('offerta').innerHTML = "Offerta Young";
     document.getElementById('costo_ticket').innerHTML = costoBiglietto - scontoMinorenne;
